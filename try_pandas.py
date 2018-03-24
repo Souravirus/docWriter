@@ -6,4 +6,4 @@ filename = 'C://Users//Apoorva//Desktop//A_Z Handwritten Data//A_Z Handwritten D
 chunksize =1
 gaps = pd.read_csv(filename, chunksize=chunksize)
 for chunk in gaps:
-    print(gaps.head(2))
+    print(chunk)
