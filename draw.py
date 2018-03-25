@@ -44,8 +44,6 @@ class Paint(object):
         self.recognise_button = Button(self.recogniseFrame, text='recognise', command = imageClick)
         self.recognise_button.grid(row = 0)
 
-        self.recognise_label = Label(self.recogniseFrame, text = "Recognised Text")
-        self.recognise_label.grid(row = 3)
 
         self.setup()
         self.root.mainloop()

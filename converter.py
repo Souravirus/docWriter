@@ -37,7 +37,6 @@ def imageprepare(argv):
 
     # normalize pixels to 0 and 1. 0 is pure white, 1 is pure black.
     tva = [(255 - x) for x in tv]
-    print(tva)
     return tva
 
 #x=imageprepare('./pic94.png')#file path here
