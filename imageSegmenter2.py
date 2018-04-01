@@ -21,7 +21,6 @@ def cutImage(start, count, mini, maxi, idx):
     print(cf.predict([mnist]), end = "")
     
 A = cv2.imread("Hello1.png", 0)
-cv2.imshow('image', A)
 arr = numpy.asarray(A)
 typearr = 0
 start = 0
