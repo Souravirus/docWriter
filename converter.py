@@ -13,23 +13,27 @@ def imageprepare(argv):
     newImage = Image.new('L', (28, 28), (255))  # creates white canvas of 28x28 pixels
 
     if width > height:  # check which dimension is bigger
-        # Width is bigger. Width becomes 20 pixels.
-        nheight = int(round((20.0 / width * height), 0))  # resize height according to ratio width
+        # Width is bigger. Width becomes 20 pixels
+        kwidth = 20
+        nheight = int(round((float(kwidth) / width * height), 0))  # resize height according to ratio width
         if (nheight == 0):  # rare case but minimum is 1 pixel
             nheight = 1
             # resize and sharpen
-        img = im.resize((20, nheight), Image.ANTIALIAS).filter(ImageFilter.SHARPEN)
+        img = im.resize((kwidth, nheight), Image.ANTIALIAS).filter(ImageFilter.SHARPEN)
+        wleft = int(round(((28 - kwidth) / 2), 0))
         wtop = int(round(((28 - nheight) / 2), 0))  # calculate horizontal position
-        newImage.paste(img, (4, wtop))  # paste resized image on white canvas
+        newImage.paste(img, (6, wtop))  # paste resized image on white canvas
     else:
         # Height is bigger. Heigth becomes 20 pixels.
-        nwidth = int(round((20.0 / height * width), 0))  # resize width according to ratio height
+        kheight = 20
+        nwidth = int(round((float(kheight) / height * width), 0))  # resize width according to ratio height
         if (nwidth == 0):  # rare case but minimum is 1 pixel
             nwidth = 1
             # resize and sharpen
-        img = im.resize((nwidth, 20), Image.ANTIALIAS).filter(ImageFilter.SHARPEN)
+        img = im.resize((nwidth, kheight), Image.ANTIALIAS).filter(ImageFilter.SHARPEN)
+        wtop = int(round(((28 - kheight) / 2), 0))
         wleft = int(round(((28 - nwidth) / 2), 0))  # caculate vertical pozition
-        newImage.paste(img, (wleft, 4))  # paste resized image on white canvas
+        newImage.paste(img, (wleft, wtop))  # paste resized image on white canvas
 
     # newImage.save("sample.png
 
