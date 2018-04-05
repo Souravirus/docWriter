@@ -1,4 +1,5 @@
 #for venv
+include/
 bin/
 lib/
 lib64
@@ -12,3 +13,6 @@ file.csv
 A_Z\ Handwritten\ Data.zip
 Hello1.png
 *.pyc
+*.jpg
+*.png
+*.sav
