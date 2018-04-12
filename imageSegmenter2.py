@@ -82,6 +82,7 @@ def getText():
 			mini = 0
 			breaking+=1
 
+
 		tCount += 1
 	#time.sleep(3)
 	print(OutputStr)
