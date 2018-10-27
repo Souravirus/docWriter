@@ -20,8 +20,8 @@ def cutImage(start, count, mini, maxi, idx):
     print("Loaded Subplot")
     plt.imshow(mimage, cmap = plt.cm.gray_r, interpolation="nearest")
     cf = joblib.load("trainedCF.sav")
-    cf2 = pickle.load(open('clfver2.5Both1000P.sav','rb'))
-    cf3 = pickle.load(open('clfvM2.6v10e7BothAllkaliP.sav','rb'))    
+    cf2 = pickle.load(open('clfver2.5BothP.sav','rb'))
+    #cf3 = pickle.load(open('clfvM2.6v10e7BothAllkaliP.sav','rb'))    
     print('Prediction',cf.predict([mnist]),cf2.predict([mnist]),cf2.predict([mnist]))
     return cf2.predict([mnist])
 
