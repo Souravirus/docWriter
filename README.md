@@ -8,11 +8,18 @@ Handwriting recognition principally entails optical character recognition. Howe
 
 ## Screenshots
 
-![im1](im1.png)
-![im2](im2.png)
-![im3](im3.png)
+Interface:
+![im1](im3.png)
+
+Some intricacies:
+![im2](im1.png)
+![im3](im2.png)
 
 ## How to install the requirements
 1. First run the virtual environment by `source bin/activate`
 2. Then run `pip install -r requirements.txt`
 3. To deactivate virtual environment `deactivate`
+
+## How to run the software
+1. First run the virtual environment
+2. The run the command `python draw1.py`
