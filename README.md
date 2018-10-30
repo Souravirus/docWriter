@@ -9,7 +9,7 @@ Handwriting recognition principally entails optical character recognition. Howe
 ## Screenshots
 
 Interface:
-![im1](im3.png)
+![im1](im3.jpeg)
 
 Some intricacies:
 ![im2](im1.png)
